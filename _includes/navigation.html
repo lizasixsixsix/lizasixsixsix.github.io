@@ -1,7 +1,9 @@
 <nav>
+    <a style="color: gray;">&middot;&nbsp;</a>
     {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: SeaGreen;" {% endif %}>
         {{ item.name }}
     </a>
+    <a style="color: gray;">&nbsp;&middot;&nbsp;</a>
     {% endfor %}
 </nav>
